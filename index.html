@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1> <u>Batch 233</u> </h1>
+
+        <div class="gallery">
+            <!-- Video 1 -->
+            <div class="gallery-item">
+                <video controls>
+                    <source src="pic (1).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="gallery-info">
+                    <h3>Parmi Hotel</h3>
+                    <p>Description of the video goes here.</p>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="gallery-item">
+                <video controls>
+                    <source src="pic (2).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="gallery-info">
+                    <h3>Parmi Hotel</h3>
+                    <p>Birthday Celebration</p>
+                </div>
+            </div>
+
+             <!-- Video 3  -->
+             <div class="gallery-item">
+                <video controls>
+                    <source src="pic (3).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="gallery-info">
+                    <h3>Parmi Hotel</h3>
+                    <p>Description of the video goes here.</p>
+                </div>
+            </div>
+
+            <!-- Image 1 -->
+            <div class="gallery-item">
+                <img src="pic (1).jpeg" alt="Image 1">
+                <div class="gallery-info">
+                    <h3>Parmi Hotel</h3>
+                    <p>Description of the image goes here.</p>
+                </div>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="gallery-item">
+                <img src="pic (2).jpeg" alt="Image 2">
+                <div class="gallery-info">
+                    <h3>Parmi Hotel</h3>
+                    <p>Description of the image goes here.</p>
+                </div>
+            </div>
+
+           
+
+            <!-- Image 4 -->
+            <div class="gallery-item">
+                <img src="pic (4).jpeg" alt="Image 4">
+                <div class="gallery-info">
+                    <h3>Parmi Hotel</h3>
+                    <p>Description of the image goes here.</p>
+                </div>
+            </div>
+
+            <!-- Image 5 -->
+            <div class="gallery-item">
+                <img src="pic (5).jpeg" alt="Image 5">
+                <div class="gallery-info">
+                    <h3>Parmi Hotel</h3>
+                    <p>Description of the image goes here.</p>
+                </div>
+            </div>
+
+            <!-- Image 6 -->
+            <div class="gallery-item">
+                <img src="pic (6).jpeg" alt="Image 6">
+                <div class="gallery-info">
+                    <h3>Parmi Hotel</h3>
+                    <p>Description of the image goes here.</p>
+                </div>
+            </div>
+
+            <!-- Image 7 -->
+            <div class="gallery-item">
+                <img src="pic (7).jpeg" alt="Image 7">
+                <div class="gallery-info">
+                    <h3>Parmi Hotel</h3>
+                    <p>Description of the image goes here.</p>
+                </div>
+            </div>
+
+            <!-- Image 8 -->
+            <div class="gallery-item">
+                <img src="pic (8).jpeg" alt="Image 8">
+                <div class="gallery-info">
+                    <h3>Parmi Hotel</h3>
+                    <p>Description of the image goes here.</p>
+                </div>
+            </div>
+
+            <!-- Image 9 -->
+            <div class="gallery-item">
+                <img src="pic (9).jpeg" alt="Image 9">
+                <div class="gallery-info">
+                    <h3>Parmi Hotel</h3>
+                    <p>Description of the image goes here.</p>
+                </div>
+            </div>
+
+            <!-- Image 10 -->
+            <div class="gallery-item">
+                <img src="pic (10).jpeg" alt="Image 10">
+                <div class="gallery-info">
+                    <h3>Image Title 10</h3>
+                    <p>Description of the image goes here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add event listeners to stop rotation and apply 3D effect on click
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function () {
+                // Remove the "clicked" class from all other items
+                document.querySelectorAll('.gallery-item').forEach(i => i.classList.remove('clicked'));
+    
+                // Toggle "clicked" class to stop rotation and show 3D effect
+                this.classList.add('clicked');
+            });
+        });
+    </script>
+    
+</body>
+</html>
